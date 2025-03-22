@@ -59,15 +59,27 @@ const cartItems = [
   }
   
   function checkout() {
-    let selected = document.querySelector('input[name="deliveryTime"]:checked');
-    let deliveryTime = selected?.value;
+    const selected = document.querySelector('input[name="deliveryTime"]:checked');
+    let deliveryTimeText = "belirtilmedi";
   
-    if (deliveryTime === "other") {
-      deliveryTime = document.getElementById("otherTimeInput").value || "belirtilmedi";
+    if (selected) {
+      if (selected.value === "other") {
+        const otherTime = document.getElementById("otherTimeInput").value;
+        deliveryTimeText = otherTime ? otherTime : "belirtilmedi";
+      } else {
+        // Radio'nun <label> içindeki metnini al
+        const label = selected.closest("label");
+        if (label) {
+          deliveryTimeText = label.innerText.trim();
+        } else {
+          // Yedek olarak value'yı saat gibi göster
+          deliveryTimeText = selected.value + ":00'da Al";
+        }
+      }
     }
   
-    alert("Siparişiniz alınmıştır!\nTeslim Zamanı: " + deliveryTime);
-  }
+    alert("Siparişiniz alınmıştır!\nTeslim Zamanı: " + deliveryTimeText);
+  }  
   
   // ✅ Radio butonlarından sadece biri seçilsin, tekrar tıklanınca kaldırılsın
   function setupDeliveryTimeToggle() {
