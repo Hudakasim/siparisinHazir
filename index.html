@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burger Restoran</title>
+  <link rel="stylesheet" href="style.css" /> 
 </head>
 <body>
-	
+  <!-- ÜST NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+        <img src="logo.png" alt="SiparişinHazır"/>
+    </div>
+    <div class="nav-buttons">
+      <button onclick="openModal('login')">Giriş Yap</button>
+      <button class="primary" onclick="openModal('register')">Kayıt Ol</button>
+    </div>
+  </header>
+
+  <!-- AÇILIŞ ALANI -->
+  <section class="hero">
+    <h1>Enfes Burgerler Kapında!</h1>
+    <p>Lezzeti keşfetmek için hemen giriş yap veya kayıt ol.</p>
+  </section>
+  <!-- Bilgi Kartları Bölümü -->
+<section class="why-us">
+    <h2>Neden SiparişinHazır?</h2>
+    <div class="cards">
+  
+      <!-- Kart 1 -->
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/50/000000/clock--v1.png" alt="Zaman" />
+        <h3>Yemeğinize ulaşmak için uzun kuyruklar beklemeyin</h3>
+        <p>Hem sıra derdinizi hem de sipariş bekleme sürenizi minimum düzeyde tutun</p>
+      </div>
+  
+      <!-- Kart 2 -->
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/50/000000/laptop.png" alt="Laptop" />
+        <h3>Online siparişleri ile sipariş hatalarını en aza indirgeyin</h3>
+        <p>Siparişinizde eksik ya da yanlış giden şeyleri ekranınızda takip edin</p>
+      </div>
+  
+      <!-- Kart 3 -->
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/50/000000/meal.png" alt="Yemek" />
+        <h3>Dilediğiniz zaman sipariş verin, yemek saatlerinizi kendiniz belirleyin</h3>
+        <p>Sisteme istediğiniz zaman girerek sipariş oluşturabilir, yemek saatlerinizi planlayabilirsiniz</p>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <!-- GİRİŞ MODALI -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('login')">&times;</span>
+      <h2>Giriş Yap</h2>
+      <input type="email" placeholder="E-posta" />
+      <input type="password" placeholder="Şifre" />
+      <button>Giriş</button>
+    </div>
+  </div>
+
+  <!-- KAYIT MODALI -->
+  <div class="modal" id="registerModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('register')">&times;</span>
+      <h2>Kayıt Ol</h2>
+      <input type="text" placeholder="Ad Soyad" />
+      <input type="email" placeholder="E-posta" />
+      <input type="password" placeholder="Şifre" />
+      <button>Kayıt Ol</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
