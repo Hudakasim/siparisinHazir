@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>SiparişinHazır | Sipariş</title>
+  <link rel="stylesheet" href="arkaSayfa.css" />
+</head>
+<body>
+
+  <!-- Sol Panel -->
+  <div class="sidebar">
+    <div class="logo-section">
+      <img src="images/logo.png" alt="Sparişin Hazır" class="logo" />
+      <h1>TAM DA İSTEDİĞİN GİBİ SPARİŞİN HAZIR!</h1>
+    </div>
+
+    <div class="nav-links">
+      <a href="#">⏪ Önceki Sayfa</a>
+      <a href="#">🏠 Ana Sayfa</a>
+      <a href="#">📍 Kafe Seç</a>
+    </div>
+  </div>
+
+  <!-- Orta Alan (Ürünler) -->
+  <div class="main">
+    <h2>Sepetiniz</h2>
+    <div id="cart-container"></div>
+    <div class="summary-bar">
+      <p>Toplam: ₺<span id="grand-total">0.00</span></p>
+    </div>
+  </div>
+
+  <!-- Sağ Panel (Teslim Zamanı) -->
+  <div class="delivery-options">
+    <h3>Teslimat Zamanı</h3>
+
+<label><input type="radio" name="deliveryTime" value="now"> Şimdi Al</label>
+<label><input type="radio" name="deliveryTime" value="9"> 9:00'da Al</label>
+<label><input type="radio" name="deliveryTime" value="10"> 10:00'da Al</label>
+<label><input type="radio" name="deliveryTime" value="11"> 11:00'da Al</label>
+<label><input type="radio" name="deliveryTime" value="11"> 12:00'da Al</label>
+<label><input type="radio" name="deliveryTime" value="11"> 13:00'da Al</label>
+<label><input type="radio" name="deliveryTime" value="11"> 14:00'da Al</label>
+<label><input type="radio" name="deliveryTime" value="11"> 15:00'da Al</label>
+<label><input type="radio" name="deliveryTime" value="11"> 16:00'da Al</label>
+<label><input type="radio" name="deliveryTime" value="11"> 17:00'da Al</label>
+<label><input type="radio" name="deliveryTime" value="18"> 18:00'da Al</label>
+
+<label>
+  <input type="radio" name="deliveryTime" value="other" id="otherRadio">
+  Diğer: 
+  <input type="time" id="otherTimeInput" style="display: none;">
+</label>
+
+    <button onclick="checkout()">Siparişi Ver</button>
+  </div>
+
+  <script src="arkaSayfa.js"></script>
+</body>
+</html>
