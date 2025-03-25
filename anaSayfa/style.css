@@ -2,19 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Jost', sans-serif;
+
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-image: url('assets/anasayfa-background.png');
+  font-family: 'Jost', sans-serif;
+  background-image: url('assets/anapage.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 
 
 /* NAVBAR */
@@ -92,14 +98,14 @@ body {
 }
 
 .menu-card {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.788);
   padding: 20px;
   border-radius: 16px;
-  width: 500px;
-  height: 500px;
+  width: 380px;
+  height: 380px;
   text-align: center;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(139, 49, 49, 0.1);
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -121,5 +127,102 @@ body {
 .menu-card h3 {
   font-size: 18px;
   font-weight: bold;
+  color: #3a3737;
+}
+.menu-heading{
+  text-align: center;
+  margin-top: 80px;
+ 
+}
+.menu-heading h2 {
+  font-size: 23px;
+  font-weight: bold;
+  color: #f7a62c	;
+  margin-bottom: 20px;
+}
+.about-content h3{
+  font-size: 10px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+
+}
+.about-title{
+  text-align: center;
+  margin-top: -90px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
   color: #333;
 }
+.about-heading{
+  padding: 60px 20px;
+  text-align: center;
+}
+.about-heading h2 {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+  margin-top: -40px;
+}
+.about-heading p {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 50px;
+  margin-top: -25px;
+}
+
+.about-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.about-card{
+  width: 400px;
+  height:400px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.788);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(139, 49, 49, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.about-card:hover {
+  transform: scale(1.05);
+}
+.about-card img {
+  width: 320px;
+  height: 320px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  margin-top: -40px;
+  
+
+}
+.about-card h3 {
+  margin-top: -70px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #3a3737;
+  margin-bottom: 5px;
+}
+.about-card p {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #3a3737;
+}
+
+
+
+
+
