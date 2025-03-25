@@ -2,81 +2,278 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Yesen Menü</title>
-  <link rel="stylesheet" href="yesen-style.css">
+  <title>Yesen Burger Menü</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="yesen.css">
 </head>
 <body>
+
 <header class="navbar">
-	<div class="left-side">
-		<div class="logo">
-			<a href="../../anaSayfa/index.html">
-				<img src="../asset/logo.png" alt="SiparişinHazır"/>
-			</a>
-		</div>
-		<div class="sol-menu">
-			<a href="../../anaSayfa/index.html">Anasayfa</a>
-			<a href="#">Biz Kimiz</a>
-			<a href="#">İletişime geçiniz</a>
-		</div>
+	<div class="logo">
+		<a href="../../anaSayfa/index.html">
+			<img src="../asset/logo.png" alt="SiparişinHazır"/>
+		</a>
 	</div>
 
-	<div class="sag-menu">
-		<a href="../../loginSayfasi/login.html" title="Giriş">
-		<img src="../asset/user.png" alt="Giriş" width="24">
-		</a>
-		<a href="../../sepetSayfasi/sepet.html" title="Sepet">
-		<img src="../asset/grocery-store.png" alt="Sepet" width="24">
-	  </a>
+	<div class="nav-links">
+			<a href="/anaSayfa/index.html">Anasayfa</a>
+	</div>
+
+	<div class="nav-icons">
+			<a href="/loginSayfasi/login.html" title="Giriş"><i class="fas fa-user"></i></a>
+			<a href="/sepetSayfasi/sepet.html" title="Sepet"><i class="fas fa-shopping-cart"></i></a>
 	</div>
 </header>
 
 <div class="container">
 	<aside class="sidebar">
-		<a>Burgerler</a>
-		<a>Menuler</a>
-		<a>İçecekler</a>
+		<a href="#" onclick="showMenu('burger')">Burgerler</a>
+		<a href="#" onclick="showMenu('atistirmalik')">Atıştırmalık</a>
+		<a href="#" onclick="showMenu('icecek')">İçecek</a>
+		<a href="#" onclick="showMenu('sos')">Sos</a>
 	</aside>
 
 	<main class="product-area">
-		<h2>Burgerler</h2>
-		<div class="product-grid">
-		<!-- Ürün Kartları -->
-		<div class="product-card">
-			<img src="burger1.jpg" alt="BBQ Burger">
-			<h4>BBQ Burger</h4>
-			<p class="price">₺180,00</p>
-			<p class="desc">100 gr. ev yapımı burger ekmeği, 90 gr. köfte, domates, marul, turşu, bbq sos, cheddar peyniri.</p>
-			<button>🛒 Seçenekler</button>
+		<div id="menu-burger" class="menu-section">
+			<h2 id="burger">Burgerler</h2>
+			<div class="product-grid">
+			<!-- Ürün Kartları -->
+			<div class="product-card">
+				<img src="menu/burgerler/Klasik.jpg" alt="Klasik-Burger">
+				<h4>Klasik Burger</h4>
+				<p class="price">₺300,00</p>
+				<p class="desc"></p>
+				<button>🛒 Seçenekler</button>
+			</div>
+
+			<div class="product-card">
+			  <img src="menu/burgerler/Pilic.jpg" alt="Piliç-Burger">
+			  <h4>Piliç Burger</h4>
+			  <p class="price">₺300,00</p>
+			  <p class="desc"></p>
+			  <button>🛒 Seçenekler</button>
+			</div>
+
+			<div class="product-card">
+			  <img src="menu/burgerler/Cheeseburger-Maxi.jpg" alt="Cheeseburger-Maxi">
+			  <h4>Cheeseburger Maxi</h4>
+			  <p class="price">₺300,00</p>
+			  <p class="desc"></p>
+			  <div class="quantity">
+				<button>-</button><span>2</span><button>+</button>
+			  </div>
+			  <button>🛒 Seçenekler</button>
+			</div>
+
+			<div class="product-card">
+			  <img src="menu/burgerler/Mantarlım-Burger-Maxi.jpg" alt="Mantarlım-Burger-Maxi">
+			  <h4>Mantarlım Burger Maxi</h4>
+			  <p class="price">₺300,00</p>
+			  <p class="desc"></p>
+			  <button>🛒 Seçenekler</button>
+			</div>
+
+			<div class="product-card">
+				<img src="menu/burgerler/Patlıcanlım-Burger-Maxi.jpg" alt="Patlıcanlım-Burger-Maxi">
+				<h4>Patlıcanlım Burger Maxi</h4>
+				<p class="price">₺300,00</p>
+				<p class="desc"></p>
+				<button>🛒 Seçenekler</button>
+			  </div>
+
+			  <div class="product-card">
+				<img src="menu/burgerler/Acılım-Burger-Maxi.jpg" alt="Acılım-Burger-Maxi">
+				<h4>Acılım Burger Maxi</h4>
+				<p class="price">₺300,00</p>
+				<p class="desc"></p>
+				<button>🛒 Seçenekler</button>
+			  </div>
+
+			  <div class="product-card">
+				<img src="menu/burgerler/Kasap-Burger-Maxi.jpg" alt="Kasap-Burger-Maxi">
+				<h4>Kasap Burger Maxi</h4>
+				<p class="price">₺300,00</p>
+				<p class="desc"></p>
+				<button>🛒 Seçenekler</button>
+			  </div>
+
+			  <div class="product-card">
+				<img src="menu/burgerler/Steak-Burger.jpg" alt="Steak-Burger">
+				<h4>Steak Burger</h4>
+				<p class="price">₺300,00</p>
+				<p class="desc"></p>
+				<button>🛒 Seçenekler</button>
+			  </div>
+
+			  <div class="product-card">
+				<img src="menu/burgerler/Yesen-Special-Burger.jpg" alt="Yesen-Special-Burger">
+				<h4>Yesen Special Burger</h4>
+				<p class="price">₺300,00</p>
+				<p class="desc"></p>
+				<button>🛒 Seçenekler</button>
+			  </div>
+
+			  <div class="product-card">
+				<img src="menu/burgerler/Yesen-Piliç-Burger.jpg" alt="Yesen-Piliç-Burger">
+				<h4>Yesen Piliç Burger</h4>
+				<p class="price">₺300,00</p>
+				<p class="desc"></p>
+				<button>🛒 Seçenekler</button>
+			  </div>
+
+			  <div class="product-card">
+				<img src="menu/burgerler/Yesen-Gurme.jpg" alt="Yesen-Gurme">
+				<h4>Yesen Gurme</h4>
+				<p class="price">₺300,00</p>
+				<p class="desc"></p>
+				<button>🛒 Seçenekler</button>
+			  </div>
+
+			  <div class="product-card">
+				<img src="menu/burgerler/Çıtır-Piliç-Burger.jpg" alt="Çıtır-Piliç-Burger">
+				<h4>Çıtır Piliç Burger</h4>
+				<p class="price">₺300,00</p>
+				<p class="desc"></p>
+				<button>🛒 Seçenekler</button>
+			  </div>
+		  </div>
 		</div>
 
-        <div class="product-card">
-          <img src="burger2.jpg" alt="Cheeseburger">
-          <h4>Cheeseburger</h4>
-          <p class="price">₺220,00</p>
-          <p class="desc">100 gr. burger ekmeği, 90 gr. köfte, domates, marul, turşu, cheddar peyniri.</p>
-          <button>🛒 Seçenekler</button>
-        </div>
+	  <!-- atistirmalik menu -->
+	   <div id="menu-atistirmalik" class="menu-section" style="display: none;">
+		<h2 id="atistirmalik">Atıştırmalık</h2>
+		<div class="product-grid">
+		 <div class="product-card">
+			 <img src="menu/atistirmalik/Çıtır-Top.jpg" alt="Çıtır-Top">
+			 <h4>Çıtır Top</h4>
+			 <p class="price">₺150,00</p>
+			 <p class="desc"></p>
+			 <button>🛒 Seçenekler</button>
+		 </div>
+		 <div class="product-card">
+			 <img src="menu/atistirmalik/Çıtır-Piliç-Halka.jpg" alt="Çıtır-Piliç-Halka">
+			 <h4>Çıtır Piliç Halka</h4>
+			 <p class="price">₺150,00</p>
+			 <p class="desc"></p>
+			 <button>🛒 Seçenekler</button>
+		 </div>
+		 <div class="product-card">
+			 <img src="menu/atistirmalik/Çıtır-Piliç-Lokma.jpg" alt="Çıtır-Piliç-Lokma">
+			 <h4>Çıtır Piliç Lokma</h4>
+			 <p class="price">₺150,00</p>
+			 <p class="desc"></p>
+			 <button>🛒 Seçenekler</button>
+		 </div>
+		 <div class="product-card">
+			 <img src="menu/atistirmalik/Patates-Kızartması.jpg" alt="Patates-Kızartması">
+			 <h4>Patates Kızartması</h4>
+			 <p class="price">₺150,00</p>
+			 <p class="desc"></p>
+			 <button>🛒 Seçenekler</button>
+		 </div>
+		 <div class="product-card">
+			 <img src="menu/atistirmalik/Mini-Mix.jpg" alt="Mini-Mix">
+			 <h4>Mini Mix</h4>
+			 <p class="price">₺150,00</p>
+			 <p class="desc"></p>
+			 <button>🛒 Seçenekler</button>
+		 </div>
+		</div>
+	   </div>
 
-        <div class="product-card">
-          <img src="burger3.jpg" alt="Chicken Burger">
-          <h4>Chicken Burger</h4>
-          <p class="price">₺190,00</p>
-          <p class="desc">200 gr. çıtır tavuk köftesi, cheddar sos, domates, marul, ranch sos.</p>
-          <div class="quantity">
-            <button>-</button><span>2</span><button>+</button>
-          </div>
-          <button>🛒 Seçenekler</button>
-        </div>
+	   <!-- icecek menu -->
+		<div id="menu-icecek" class="menu-section" style="display: none;">
+			<h2 id="icecek">İçecek</h2>
+			<div class="product-grid">
+				<div class="product-card">
+					<img src="menu/icecek/Cola.png" alt="Cola">
+					<h4>Cola Turka</h4>
+					<p class="price">₺30,00</p>
+					<p class="desc"></p>
+					<button>🛒 Seçenekler</button>
+				</div>
 
-        <div class="product-card">
-          <img src="burger4.jpg" alt="Çocuk Burger">
-          <h4>Çocuk Burger</h4>
-          <p class="price">₺135,00</p>
-          <p class="desc">70 gr. köfte, cheddar sos, domates, marul, ketçap, mayonez.</p>
-          <button>🛒 Seçenekler</button>
-        </div>
-      </div>
+				<div class="product-card">
+					<img src="menu/icecek/Limonlu-Soda.png" alt="Limonlu-Soda">
+					<h4>Limonlu Soda</h4>
+					<p class="price">₺30,00</p>
+					<p class="desc"></p>
+					<button>🛒 Seçenekler</button>
+				</div>
+
+				<div class="product-card">
+					<img src="menu/icecek/Soda.jpg" alt="Soda">
+					<h4>Soda</h4>
+					<p class="price">₺30,00</p>
+					<p class="desc"></p>
+					<button>🛒 Seçenekler</button>
+				</div>
+
+				<div class="product-card">
+					<img src="menu/icecek/Ayran.png" alt="Ayran">
+					<h4>Ayran</h4>
+					<p class="price">₺30,00</p>
+					<p class="desc"></p>
+					<button>🛒 Seçenekler</button>
+				</div>
+
+				<div class="product-card">
+					<img src="menu/icecek/Su.jpg" alt="Su">
+					<h4>Su</h4>
+					<p class="price">₺10,00</p>
+					<p class="desc"></p>
+					<button>🛒 Seçenekler</button>
+				</div>
+			</div>
+		</div>
+
+	  <!-- sos menu -->
+	   <div id="menu-sos" class="menu-section" style="display: none;">
+		<h2 id="sos">Sos</h2>
+		<div class="product-grid">
+				<div class="product-card">
+					<img src="menu/sos/Heinz-Ketçap.jpg" alt="Ketçap">
+					<h4>Heinz Ketçap</h4>
+					<p class="price">₺10,00</p>
+					<p class="desc"></p>
+					<button>🛒 Seçenekler</button>
+				</div>
+
+				<div class="product-card">
+					<img src="menu/sos/Heinz-Mayonez .jpg" alt="Mayonez">
+					<h4>Heinz Mayonez </h4>
+					<p class="price">₺10,00</p>
+					<p class="desc"></p>
+					<button>🛒 Seçenekler</button>
+				</div>
+
+				<div class="product-card">
+					<img src="menu/sos/Heinz-BBQ-Sos.jpg" alt="BBQ-Sos">
+					<h4>Heinz BBQ Sos</h4>
+					<p class="price">₺10,00</p>
+					<p class="desc"></p>
+					<button>🛒 Seçenekler</button>
+				</div>
+
+				<div class="product-card">
+					<img src="menu/sos/Coloroda-Ranch-Sos.png" alt="Ranch">
+					<h4>Coloroda Ranch Sos</h4>
+					<p class="price">₺10,00</p>
+					<p class="desc"></p>
+					<button>🛒 Seçenekler</button>
+				</div>
+
+				<div class="product-card">
+					<img src="menu/sos/Coloroda-Acı-Sos.png" alt="Acı-Sos">
+					<h4>Coloroda Acı Sos</h4>
+					<p class="price">₺10,00</p>
+					<p class="desc"></p>
+					<button>🛒 Seçenekler</button>
+				</div>
+		</div>
+	   </div>
     </main>
 </div>
+<script src="yesen.js"></script>
 </body>
 </html>
