@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Coffee Factory Menü</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="coffee.css">
+</head>
+<body>
+
+<header class="navbar">
+	<div class="logo">
+		<a href="../../anaSayfa/index.html">
+			<img src="../asset/logo.png" alt="SiparişinHazır"/>
+		</a>
+	</div>
+
+	<div class="nav-links">
+			<a href="/anaSayfa/index.html">Anasayfa</a>
+	</div>
+
+	<div class="nav-icons">
+			<a href="/loginSayfasi/login.html" title="Giriş"><i class="fas fa-user"></i></a>
+			<a href="/sepetSayfasi/sepet.html" title="Sepet"><i class="fas fa-shopping-cart"></i></a>
+	</div>
+</header>
+
+<div class="container">
+	<aside class="sidebar">
+		<a href="#" onclick="showMenu('soguk')">Soğuk Kahveler</a>
+		<a href="#" onclick="showMenu('sicak')">Sıcak Kahveler</a>
+		<a href="#" onclick="showMenu('refresher')">Refresher's</a>
+		<a href="#" onclick="showMenu('fruit')">Fruit & Cream Beverage</a>
+		<a href="#" onclick="showMenu('frozen')">Frozen</a>
+	</aside>
+
+	<main class="product-area">
+		<div id="menu-soguk" class="menu-section">
+			<h2 id="soguk">Soğuk Kahveler</h2>
+			<div class="product-grid">
+			<!-- Ürün Kartları -->
+			<div class="product-card">
+				<img src="menu/Soguk/ICED CAFFE AMERICANO.jpg" alt="Iced Americano">
+				<h4>Iced Americano</h4>
+				<p class="price">₺90,00</p>
+				<p class="desc"></p>
+				<button>🛒 Seçenekler</button>
+			</div>
+
+			<div class="product-card">
+			  <img src="menu/Soguk/ICED CAFFE LATTE.jpg" alt="Iced Latte">
+			  <h4>Iced Caffe Latte</h4>
+			  <p class="price">₺145,00</p>
+			  <p class="desc"></p>
+			  <button>🛒 Seçenekler</button>
+			</div>
+
+			<div class="product-card">
+			  <img src="menu/Soguk/ICED CARAMEL MACCHIATO.jpg" alt="Caramel Macchiato">
+			  <h4>Caramel Macchiato</h4>
+			  <p class="price">₺190,00</p>
+			  <p class="desc"></p>
+			  <div class="quantity">
+				<button>-</button><span>2</span><button>+</button>
+			  </div>
+			  <button>🛒 Seçenekler</button>
+			</div>
+
+			<div class="product-card">
+			  <img src="menu/Soguk/ICED FILTER COFFEE.jpg" alt="Filter Coffe">
+			  <h4>Filter Coffee</h4>
+			  <p class="price">₺100,00</p>
+			  <p class="desc"></p>
+			  <button>🛒 Seçenekler</button>
+			</div>
+
+			<div class="product-card">
+				<img src="menu/Soguk/ICED MOCHA.jpg" alt="Iced Mocha">
+				<h4>Iced Mocha</h4>
+				<p class="price">₺190,00</p>
+				<p class="desc"></p>
+				<button>🛒 Seçenekler</button>
+			  </div>
+
+			  <div class="product-card">
+				<img src="menu/Soguk/ICED WHITE MOCHA.jpg" alt="White Mocha">
+				<h4>White Mocha</h4>
+				<p class="price">₺190,00</p>
+				<p class="desc"></p>
+				<button>🛒 Seçenekler</button>
+			  </div>
+		  </div>
+		</div>
+
+	  <!-- sicak kahveler menu -->
+	   <div id="menu-sicak" class="menu-section" style="display: none;">
+		<h2 id="sicak">Sıcak Kahveler</h2>
+		<div class="product-grid">
+		 <div class="product-card">
+			 <img src="menu/Sicak/Americano.jpg" alt="Americano">
+			 <h4>Americano</h4>
+			 <p class="price">₺90,00</p>
+			 <p class="desc"></p>
+			 <button>🛒 Seçenekler</button>
+		 </div>
+		 <div class="product-card">
+			 <img src="menu/Sicak/Cappuccino.jpg" alt="Cappuccino">
+			 <h4>Cappuccino</h4>
+			 <p class="price">₺135,00</p>
+			 <p class="desc"></p>
+			 <button>🛒 Seçenekler</button>
+		 </div>
+		 <div class="product-card">
+			 <img src="menu/Sicak/CARAMEL MACCHIATO.jpg" alt="Caramel Macchiato">
+			 <h4>Caramel Macchiato</h4>
+			 <p class="price">₺155,00</p>
+			 <p class="desc"></p>
+			 <button>🛒 Seçenekler</button>
+		 </div>
+		 <div class="product-card">
+			 <img src="menu/Sicak/Espresso.jpg" alt="Espresso">
+			 <h4>Espresso</h4>
+			 <p class="price">₺80,00</p>
+			 <p class="desc"></p>
+			 <button>🛒 Seçenekler</button>
+		 </div>
+		 <div class="product-card">
+			 <img src="menu/Sicak/filtreCoffee.jpg" alt="Filter Coffee">
+			 <h4>Filter Coffee</h4>
+			 <p class="price">₺100,00</p>
+			 <p class="desc"></p>
+			 <button>🛒 Seçenekler</button>
+		 </div>
+		 <div class="product-card">
+			 <img src="menu/Sicak//Latte.jpg" alt="Coffe Latte">
+			 <h4>Coffe Latte</h4>
+			 <p class="price">₺130,00</p>
+			 <p class="desc"></p>
+			 <button>🛒 Seçenekler</button>
+		 </div>
+		 <div class="product-card">
+			 <img src="menu/Sicak/TÜRK KAHVESİ.jpg" alt="Türk Kahvesi">
+			 <h4>Türk Kahvesi</h4>
+			 <p class="price">₺90,00</p>
+			 <p class="desc"></p>
+			 <button>🛒 Seçenekler</button>
+		 </div>
+		</div>
+	   </div>
+
+	   <!-- refresher's menu -->
+		<div id="menu-refresher" class="menu-section" style="display: none;">
+			<h2 id="refresher">Refresher's</h2>
+			<div class="product-grid">
+				<div class="product-card">
+					<img src="menu/refresher/Acia-Berry.png" alt="Acia Berry">
+					<h4>Acia Berry Refresher</h4>
+					<p class="price">₺200,00</p>
+					<p class="desc"></p>
+					<button>🛒 Seçenekler</button>
+				</div>
+				<div class="product-card">
+					<img src="menu/refresher/Lime.png" alt="Lime">
+					<h4>Lime Refresher</h4>
+					<p class="price">₺200,00</p>
+					<p class="desc"></p>
+					<button>🛒 Seçenekler</button>
+				</div>
+				<div class="product-card">
+					<img src="menu/refresher/Mango.png" alt="Mango">
+					<h4>Mango Refresher</h4>
+					<p class="price">₺200,00</p>
+					<p class="desc"></p>
+					<button>🛒 Seçenekler</button>
+				</div>
+				<div class="product-card">
+					<img src="menu/refresher/Ver-Berry.png" alt="veri Berry">
+					<h4>Veri-Berry Refresher</h4>
+					<p class="price">₺200,00</p>
+					<p class="desc"></p>
+					<button>🛒 Seçenekler</button>
+				</div>
+			</div>
+		</div>
+
+	  <!-- fruit menu -->
+	   <div id="menu-fruit" class="menu-section" style="display: none;">
+		<h2 id="fruit">Fruit & Cream Beverage</h2>
+		<div class="product-grid">
+				<div class="product-card">
+					<img src="menu/fruit/Italian-Cream.png" alt="italian">
+					<h4>Italian Cream</h4>
+					<p class="price">₺200,00</p>
+					<p class="desc"></p>
+					<button>🛒 Seçenekler</button>
+				</div>
+				<div class="product-card">
+					<img src="menu/fruit/CoconutCream.png" alt="coconut">
+					<h4>Coconut Cream</h4>
+					<p class="price">₺200,00</p>
+					<p class="desc"></p>
+					<button>🛒 Seçenekler</button>
+				</div>
+				<div class="product-card">
+					<img src="menu/fruit/Chocolate-Cream.png" alt="chocolate">
+					<h4>Chocolate Cream</h4>
+					<p class="price">₺200,00</p>
+					<p class="desc"></p>
+					<button>🛒 Seçenekler</button>
+				</div>
+				<div class="product-card">
+					<img src="menu/fruit/Strawberry's-chocolate-Cream.png" alt="strawberry">
+					<h4>Strawberry Chocolate Cream</h4>
+					<p class="price">₺200,00</p>
+					<p class="desc"></p>
+					<button>🛒 Seçenekler</button>
+				</div>
+				<div class="product-card">
+					<img src="menu/fruit/Caramel-Waffle.png" alt="caramel">
+					<h4>Caramel Waffle Cream</h4>
+					<p class="price">₺200,00</p>
+					<p class="desc"></p>
+					<button>🛒 Seçenekler</button>
+				</div>
+		</div>
+	   </div>
+
+	  <!-- frozen menu -->
+	   <div id="menu-frozen" class="menu-section" style="display: none;">
+		<h2 id="frozen">Frozen</h2>
+		<div class="product-grid">
+			<div class="product-card">
+				<img src="menu/frozen/Mango.jpg" alt="mango">
+				<h4>Mango Frozen</h4>
+				<p class="price">₺200,00</p>
+				<p class="desc"></p>
+				<button>🛒 Seçenekler</button>
+			</div>
+			<div class="product-card">
+				<img src="menu/frozen/Redberry.jpg" alt="Redberry">
+				<h4>Redberry Frozen</h4>
+				<p class="price">₺200,00</p>
+				<p class="desc"></p>
+				<button>🛒 Seçenekler</button>
+			</div>
+			<div class="product-card">
+				<img src="menu/frozen/Strawberry.jpg" alt="strawberry">
+				<h4>Strawberry Frozen</h4>
+				<p class="price">₺200,00</p>
+				<p class="desc"></p>
+				<button>🛒 Seçenekler</button>
+			</div>
+		</div>
+	   </div>
+    </main>
+</div>
+<script src="coffee.js"></script>
+</body>
+</html>
