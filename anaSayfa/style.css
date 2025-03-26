@@ -67,7 +67,7 @@ html {
 
 .nav-links a.active,
 .nav-links a:hover {
-  color: #e86f18;
+  color: #f7a62c;
 }
 .nav-icons {
   display: flex;
@@ -85,7 +85,7 @@ html {
 }
 
 .nav-icons a:hover {
-  color: #e86f18;
+  color: #f7a62c;
   transform: scale(1.1);
 }
 .brand-menu {
@@ -486,6 +486,37 @@ textarea.input {
   top: calc(50% - 180px);
   left: calc(50% - 180px);
 }
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.6rem 10%;
+  background-color:antiquewhite;
+}
+.footer-text p {
+  font-size: 1.2rem;
+  color:rgb(104, 7, 7);
+}
+.footer-iconTop a{
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding:0.8rem;
+  background-color:#ff7f50;
+  border-radius:0.8rem;
+  text-decoration: none;
+}
+.footer-iconTop a i{
+  font-size: 2rem;
+  color: #fff;
+}
+.footer-iconTop a:hover{
+  background-color:#ffc44d;
+}
+
+
+
 
 /* Mobil Uyum */
 @media (max-width: 850px) {
@@ -503,3 +534,6 @@ textarea.input {
     padding: 1.7rem 1.6rem;
   }
 }
+
+
+
