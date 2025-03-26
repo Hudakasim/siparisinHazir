@@ -19,6 +19,7 @@ body {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
+  overflow-y: scroll;
 }
 
 
@@ -85,7 +86,7 @@ html {
 
 .nav-icons a:hover {
   color: #e86f18;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .brand-menu {
   display: flex;
@@ -132,7 +133,7 @@ html {
 .menu-heading{
   text-align: center;
   margin-top: 80px;
- 
+
 }
 .menu-heading h2 {
   font-size: 23px;

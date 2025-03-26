@@ -10,6 +10,8 @@ body {
   }
 
   html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 100px;
 	overflow-y: scroll;
   }
 
@@ -37,14 +39,12 @@ body {
   }
   .nav-links {
 	display: flex;
-	gap: 20px;
 	margin-left: auto;
 	margin-right: 20px;
 	font-family: 'Jost', sans-serif;
   }
 
   .nav-links a {
-	justify-content:right;
 	margin-right: 20px;
 	text-decoration: none;
 	color: #333;
