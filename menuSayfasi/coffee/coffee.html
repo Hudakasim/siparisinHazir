@@ -49,8 +49,14 @@ background-color: white;">
 				<img src="menu/Soguk/ICED CAFFE AMERICANO.jpg" alt="Iced Americano">
 				<h4>Iced Americano</h4>
 				<p class="price">₺90,00</p>
-				<p class="desc"></p>
-				<button>🛒 Seçenekler</button>
+
+				<button class="add-to-cart" onclick="toggleCartButtons()">Sepete Ekle</button>
+
+				<div class="quantity-control" style="display: none;">
+					<button class="decrease" onclick="updateQuantity(-1)">-</button>
+					<span id="quantity">1</span>
+					<button class="increase" onclick="updateQuantity(1)">+</button>
+				  </div>
 			</div>
 
 			<div class="product-card">
