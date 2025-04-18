@@ -92,7 +92,7 @@ body {
 	color: white;
 	padding: 20px;
 	align-items: center;
-	height: 300px;
+	height: auto;
   }
 
   .sidebar a {

@@ -3,10 +3,18 @@ let currentProductId = null; // Şu anki ürün ID'si
 // Popup'ı göster
 function showPopup(productId) {
   currentProductId = productId; // Hangi ürünü popup'a göndereceğimizi saklıyoruz
-
   const productName = document.querySelector(`#product-${productId} h4`).innerText; // Ürün adını al
   const productPrice = document.querySelector(`#product-${productId} .price`).innerText; // Ürün fiyatını al
-  const popup = document.getElementById('popup');
+
+//   if(){
+// 	const popup = document.getElementById('popup');
+//   }
+//   else if(){
+// 	const popup = document.getElementById('popup2');
+//   }
+//   else if (){
+// 	const popup = document.getElementById('popup3');
+//   }
   popup.style.display = 'block'; // Popup'ı göster
 
   // Popup başlığını dinamik olarak değiştirme
