@@ -6,13 +6,14 @@
   <link rel="icon" type="image/png" href="/anaSayfa/assets/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="/menuSayfasi/menu.css">
+  <link rel="stylesheet" href="popup.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body style="background-image: url('/menuSayfasi/asset/coffee-background.png');
-background-repeat: repeat;
-background-size: 2000px;
-background-position: center top;
-background-color: white;">
+	background-repeat: repeat;
+	background-size: 2000px;
+	background-position: center top;
+	background-color: white;">
 
 <header class="navbar">
 	<div class="logo">
@@ -49,29 +50,21 @@ background-color: white;">
 			<div class="product-card" id="product-1">
 				<img src="menu/Soguk/ICED CAFFE AMERICANO.jpg" alt="Iced Americano">
 				<h4>Iced Americano</h4>
-				<p class="price">₺90,00</p>
-
-				<!-- <button class="to-popup" onclick="toggleCartButtons()">Sepete Ekle</button> -->
+				<p class="price">90,00₺</p>
 				<button class="to-popup" onclick="showPopup('1')">Sepete Ekle</button>
-
-				<!-- <div class="quantity-control" style="display: none;">
-					<button class="decrease" onclick="updateQuantity(-1)">-</button>
-					<span id="quantity">1</span>
-					<button class="increase" onclick="updateQuantity(1)">+</button>
-				  </div> -->
 			</div>
 
 			<div class="product-card" id="product-2">
 			  <img src="menu/Soguk/ICED CAFFE LATTE.jpg" alt="Iced Latte">
 			  <h4>Iced Caffe Latte</h4>
-			  <p class="price">₺145,00</p>
+			  <p class="price">145,00₺</p>
 			  <button class="to-popup" onclick="showPopup('2')">Sepete Ekle</button>
 			</div>
 
 			<div class="product-card" id="product-3">
 			  <img src="menu/Soguk/ICED CARAMEL MACCHIATO.jpg" alt="Caramel Macchiato">
 			  <h4>Caramel Macchiato</h4>
-			  <p class="price">₺190,00</p>
+			  <p class="price">190,00₺</p>
 			  <button class="to-popup" onclick="showPopup('3')">Sepete Ekle</button>
 
 			</div>
@@ -79,21 +72,21 @@ background-color: white;">
 			<div class="product-card" id="product-4">
 			  <img src="menu/Soguk/ICED FILTER COFFEE.jpg" alt="Filter Coffe">
 			  <h4>Filter Coffee</h4>
-			  <p class="price">₺100,00</p>
+			  <p class="price">100,00₺</p>
 			  <button class="to-popup" onclick="showPopup('4')">Sepete Ekle</button>
 			</div>
 
 			<div class="product-card" id="product-5">
 				<img src="menu/Soguk/ICED MOCHA.jpg" alt="Iced Mocha">
 				<h4>Iced Mocha</h4>
-				<p class="price">₺190,00</p>
+				<p class="price">190,00₺</p>
 				<button class="to-popup" onclick="showPopup('5')">Sepete Ekle</button>
 			  </div>
 
 			  <div class="product-card" id="product-6">
 				<img src="menu/Soguk/ICED WHITE MOCHA.jpg" alt="White Mocha">
 				<h4>White Mocha</h4>
-				<p class="price">₺190,00</p>
+				<p class="price">190,00₺</p>
 				<button class="to-popup" onclick="showPopup('6')">Sepete Ekle</button>
 			  </div>
 		  </div>
@@ -106,49 +99,49 @@ background-color: white;">
 		 <div class="product-card" id="product-7">
 			 <img src="menu/Sicak/Americano.jpg" alt="Americano">
 			 <h4>Americano</h4>
-			 <p class="price">₺90,00</p>
+			 <p class="price">90,00₺</p>
 			 <button class="to-popup" onclick="showPopup('7')">Sepete Ekle</button>
 		 </div>
 
 		 <div class="product-card" id="product-8">
 			 <img src="menu/Sicak/Cappuccino.jpg" alt="Cappuccino">
 			 <h4>Cappuccino</h4>
-			 <p class="price">₺135,00</p>
+			 <p class="price">135,00₺</p>
 			 <button class="to-popup" onclick="showPopup('8')">Sepete Ekle</button>
 		 </div>
 
 		 <div class="product-card" id="product-9">
 			 <img src="menu/Sicak/CARAMEL MACCHIATO.jpg" alt="Caramel Macchiato">
 			 <h4>Caramel Macchiato</h4>
-			 <p class="price">₺155,00</p>
+			 <p class="price">155,00₺</p>
 			 <button class="to-popup" onclick="showPopup('9')">Sepete Ekle</button>
 		 </div>
 
 		 <div class="product-card" id="product-10">
 			 <img src="menu/Sicak/Espresso.jpg" alt="Espresso">
 			 <h4>Espresso</h4>
-			 <p class="price">₺80,00</p>
+			 <p class="price">80,00₺</p>
 			 <button class="to-popup" onclick="showPopup('10')">Sepete Ekle</button>
 		 </div>
 
 		 <div class="product-card" id="product-11">
 			 <img src="menu/Sicak/filtreCoffee.jpg" alt="Filter Coffee">
 			 <h4>Filter Coffee</h4>
-			 <p class="price">₺100,00</p>
+			 <p class="price">100,00₺</p>
 			 <button class="to-popup" onclick="showPopup('10')">Sepete Ekle</button>
 		 </div>
 
 		 <div class="product-card" id="product-12">
 			 <img src="menu/Sicak//Latte.jpg" alt="Coffe Latte">
 			 <h4>Coffe Latte</h4>
-			 <p class="price">₺130,00</p>
+			 <p class="price">130,00₺</p>
 			 <button class="to-popup" onclick="showPopup('12')">Sepete Ekle</button>
 		 </div>
 
 		 <div class="product-card" id="product-13">
 			 <img src="menu/Sicak/TÜRK KAHVESİ.jpg" alt="Türk Kahvesi">
 			 <h4>Türk Kahvesi</h4>
-			 <p class="price">₺90,00</p>
+			 <p class="price">90,00₺</p>
 			 <button class="to-popup" onclick="showPopup('13')">Sepete Ekle</button>
 		 </div>
 		</div>
@@ -162,27 +155,27 @@ background-color: white;">
 				<div class="product-card" id="product-14">
 					<img src="menu/refresher/Acia-Berry.png" alt="Acia Berry">
 					<h4>Acia Berry Refresher</h4>
-					<p class="price">₺200,00</p>
+					<p class="price">200,00₺</p>
 					<button class="to-popup" onclick="showPopup('14')">Sepete Ekle</button>
 				</div>
 
 				<div class="product-card" id="product-15">
 					<img src="menu/refresher/Lime.png" alt="Lime">
 					<h4>Lime Refresher</h4>
-					<p class="price">₺200,00</p>
+					<p class="price">200,00₺</p>
 					<button class="to-popup" onclick="showPopup('15')">Sepete Ekle</button>
 				</div>
 
 				<div class="product-card" id="product-16">
 					<img src="menu/refresher/Mango.png" alt="Mango">
 					<h4>Mango Refresher</h4>
-					<p class="price">₺200,00</p>
+					<p class="price">200,00₺</p>
 					<button class="to-popup" onclick="showPopup('16')">Sepete Ekle</button>
 				</div>
 				<div class="product-card" id="product-17">
 					<img src="menu/refresher/Ver-Berry.png" alt="veri Berry">
 					<h4>Veri-Berry Refresher</h4>
-					<p class="price">₺200,00</p>
+					<p class="price">200,00₺</p>
 					<button class="to-popup" onclick="showPopup('17')">Sepete Ekle</button>
 				</div>
 			</div>
@@ -196,35 +189,35 @@ background-color: white;">
 				<div class="product-card" id="product-18">
 					<img src="menu/fruit/Italian-Cream.png" alt="italian">
 					<h4>Italian Cream</h4>
-					<p class="price">₺200,00</p>
+					<p class="price">200,00₺</p>
 					<button class="to-popup" onclick="showPopup('18')">Sepete Ekle</button>
 				</div>
 
 				<div class="product-card" id="product-19">
 					<img src="menu/fruit/CoconutCream.png" alt="coconut">
 					<h4>Coconut Cream</h4>
-					<p class="price">₺200,00</p>
+					<p class="price">200,00₺</p>
 					<button class="to-popup" onclick="showPopup('19')">Sepete Ekle</button>
 				</div>
 
 				<div class="product-card" id="product-20">
 					<img src="menu/fruit/Chocolate-Cream.png" alt="chocolate">
 					<h4>Chocolate Cream</h4>
-					<p class="price">₺200,00</p>
+					<p class="price">200,00₺</p>
 					<button class="to-popup" onclick="showPopup('20')">Sepete Ekle</button>
 				</div>
 
 				<div class="product-card" id="product-21">
 					<img src="menu/fruit/Strawberry's-chocolate-Cream.png" alt="strawberry">
 					<h4>Strawberry Chocolate Cream</h4>
-					<p class="price">₺200,00</p>
+					<p class="price">200,00₺</p>
 					<button class="to-popup" onclick="showPopup('21')">Sepete Ekle</button>
 				</div>
 
 				<div class="product-card" id="product-22">
 					<img src="menu/fruit/Caramel-Waffle.png" alt="caramel">
 					<h4>Caramel Waffle Cream</h4>
-					<p class="price">₺200,00</p>
+					<p class="price">200,00₺</p>
 					<button class="to-popup" onclick="showPopup('22')">Sepete Ekle</button>
 				</div>
 		</div>
@@ -238,21 +231,21 @@ background-color: white;">
 			<div class="product-card" id="product-23">
 				<img src="menu/frozen/Mango.jpg" alt="mango">
 				<h4>Mango Frozen</h4>
-				<p class="price">₺200,00</p>
+				<p class="price">200,00₺</p>
 				<button class="to-popup" onclick="showPopup('23')">Sepete Ekle</button>
 			</div>
 
 			<div class="product-card" id="product-24">
 				<img src="menu/frozen/Redberry.jpg" alt="Redberry">
 				<h4>Redberry Frozen</h4>
-				<p class="price">₺200,00</p>
+				<p class="price">200,00₺</p>
 				<button class="to-popup" onclick="showPopup('24')">Sepete Ekle</button>
 			</div>
 
 			<div class="product-card" id="product-25">
 				<img src="menu/frozen/Strawberry.jpg" alt="strawberry">
 				<h4>Strawberry Frozen</h4>
-				<p class="price">₺200,00</p>
+				<p class="price">200,00₺</p>
 				<button class="to-popup" onclick="showPopup('25')">Sepete Ekle</button>
 			</div>
 		</div>
@@ -260,7 +253,6 @@ background-color: white;">
     </main>
 </div>
 
-<!-- Tek Popup HTML -->
 <div id="popup" class="popup">
 	<div class="popup-content">
 	  <div class="size-of-drink">
@@ -268,9 +260,9 @@ background-color: white;">
 		<input type="radio" id="Small" name="boyut" value="Small" onclick="showQuantityControl()">
 		<label for="Small">Small</label><br>
 		<input type="radio" id="Medium" name="boyut" value="Medium" onclick="showQuantityControl()">
-		<label for="Medium">Medium</label><br>
+		<label for="Medium">Medium (+20)</label><br>
 		<input type="radio" id="Large" name="boyut" value="Large" onclick="showQuantityControl()">
-		<label for="Large">Large</label><br>
+		<label for="Large">Large (+30)</label><br>
 	  </div>
 
 	  <div class="quantity-control" id="quantity-control" style="display: none;">
@@ -285,5 +277,6 @@ background-color: white;">
   </div>
 
 <script src="/menuSayfasi/menu.js"></script>
+<script src="popup.js"></script>
 </body>
 </html>
