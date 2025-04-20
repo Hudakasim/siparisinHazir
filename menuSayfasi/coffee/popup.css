@@ -1,0 +1,18 @@
+/* İçecek boyutu seçimi */
+.size-of-drink {
+	display: flex;
+	flex-direction: column; /* Yalnızca dikey hizalama */
+	align-items: start;
+	text-align: left; /* Metni sola hizala */
+}
+
+.size-of-drink p {
+	font-size: 16px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #333;
+}
+
+.size-of-drink label {
+	padding-top: 10px;
+}

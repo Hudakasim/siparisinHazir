@@ -1,0 +1,44 @@
+input[type="checkbox"]{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	vertical-align: middle;
+	cursor: pointer;
+  }
+  .extra-options input[type="checkbox"] {
+	margin-right: 10px;
+	transform: scale(0.8); /* Daha büyük checkbox */
+	vertical-align: middle;
+  }
+
+  /* Her bir checkbox etiketi */
+  .extra-options label {
+	font-size: 16px;
+	color: #333;
+	margin-bottom: 10px;
+	display: inline-block;
+	vertical-align: middle;
+  }
+
+  /* label {
+	font-size: 16px;
+	font-weight: normal;
+	color: #333;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+  } */
+
+  .extra-options {
+	padding: 10px;
+	text-align: left;
+  }
+
+
+  .product-name-style {
+	color: #333;
+	font-size: 20px;
+	font-weight: bold;
+  }
