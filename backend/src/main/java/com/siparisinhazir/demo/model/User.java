@@ -1,7 +1,10 @@
 package com.siparisinhazir.demo.model;
-
+import lombok.Builder;
 import jakarta.persistence.*;
 import lombok.*;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
 
 @Entity
 @Table(name = "users")
