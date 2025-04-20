@@ -2,6 +2,7 @@ package com.siparisinhazir.demo.model;
 
 import jakarta.persistence.*;
 import lombok.*;
+import java.util.List;
 
 @Entity
 @Table(name = "vendors")
@@ -14,8 +15,17 @@ public class Vendor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, unique = true)
+    // Örn: "Coffee Factory", "Yesen Burger", "Aker"
+    @Column(nullable = false)
     private String name;
 
-    private String logoUrl; // örneğin: "/images/coffee-factory.png"
+    // Logo görseli için URL
+    private String logoUrl;
+
+    // İsteğe bağlı: Kategori (Kafe, Restoran, Tatlıcı, vs.)
+    private String category;
+
+    // Bu kafenin tüm ürünleri
+    @OneToMany(mappedBy = "vendor", cascade = CascadeType.ALL)
+    private List<MenuItem> menuItems;
 }
