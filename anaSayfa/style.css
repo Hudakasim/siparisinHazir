@@ -229,6 +229,11 @@ html {
 
 /* İLETİŞİM FORMU TASARIMI */
 
+.contact {
+	overflow-x: hidden;
+	position: relative;
+  }
+
 .contact .container {
   position: relative;
   width: 100%;
@@ -335,6 +340,24 @@ textarea.input {
   transform: translateY(0);
 }
 
+.input-container .input:focus + label,
+.input-container .input:not(:placeholder-shown) + label {
+  top: 1px;
+  left: 18px;
+  font-size: 0.75rem;
+  color: #ffffff;
+  background: #ff7f50;
+  padding: 0 4px;
+  border-radius: 5px;
+}
+
+.input-container.textarea .input:focus + label,
+.input-container.textarea .input:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 0.75rem;
+  color: #ffffff;
+}
+
 .btn {
   padding: 0.6rem 1.3rem;
   background-color: #fff;
@@ -352,7 +375,7 @@ textarea.input {
   color: #fff;
 }
 
-.input-container span {
+/* .input-container span {
   position: absolute;
   top: 0;
   left: 25px;
@@ -394,7 +417,7 @@ textarea.input {
 .input-container.focus span:after {
   width: 50%;
   opacity: 1;
-}
+} */
 
 /* Sağ Panel - İletişim Bilgileri */
 
