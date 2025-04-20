@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" href="/anaSayfa/assets/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="/menuSayfasi/menu.css">
+  <link rel="stylesheet" href="/anaSayfa/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body style="background-image: url('/menuSayfasi/asset/coffee-background.png');
@@ -26,10 +27,12 @@ background-color: white;">
 	</div>
 
 	<div class="nav-icons">
-			<a href="/loginSayfasi/login.html" title="Giriş"><i class="fas fa-user"></i></a>
-			<a href="/sepetSayfasi/sepet.html" title="Sepet"><i class="fas fa-shopping-cart"></i></a>
+		<a href="javascript:void(0)" onclick="openLoginPopup()" title="Giriş"><i class="fas fa-user"></i></a>
+		<a href="/sepetSayfasi/sepet.html" title="Sepet"><i class="fas fa-shopping-cart"></i></a>
 	</div>
 </header>
+
+<div id="popupContainer"></div>
 
 <div class="container">
 	<aside class="sidebar">
@@ -261,7 +264,7 @@ background-color: white;">
 </div>
 
 <!-- Tek Popup HTML -->
-<div id="popup" class="popup">
+<div id="productpopup" class="popup">
 	<div class="popup-content">
 	  <div class="size-of-drink">
 		<p id="product-name">İçeceğinizin boyutunu seçin.</p>
@@ -285,5 +288,6 @@ background-color: white;">
   </div>
 
 <script src="/menuSayfasi/menu.js"></script>
+<script src="/anaSayfa/script.js"></script>
 </body>
 </html>

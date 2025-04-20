@@ -1,17 +1,39 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <title>Giriş Yap</title>
-</head>
-<body>
-  <h1>Giriş Sayfası</h1>
-  <form>
-    <label>Kullanıcı Adı:</label>
-    <input type="text"><br><br>
-    <label>Şifre:</label>
-    <input type="password"><br><br>
-    <button type="submit">Giriş Yap</button>
-  </form>
-</body>
-</html>
+<!-- Ortak Login & Register Popup -->
+<!-- Bu dosya diğer sayfalar tarafından fetch ile çağrılacak -->
+
+<!-- Pop-up Overlay -->
+<div id="popupOverlay" class="popup-overlay"></div>
+
+<!-- Giriş Yap Pop-up -->
+<div id="loginPopup" class="popup">
+  <span class="popup-close" onclick="closeLoginPopup()">&times;</span>
+  <div class="popup-content">
+    <h2 class="title">Giriş Yap</h2>
+    <form id="loginForm" action="javascript:void(0)">
+      <input type="email" id="email" placeholder="E-Posta" required />
+      <input type="password" id="password" placeholder="Şifre" required />
+      <button type="submit" class="btn" onclick="loginUser(event)">Giriş Yap</button>
+    </form>
+    <p>Henüz üye değil misiniz? <a href="javascript:void(0)" onclick="openRegisterPopup()">Kayıt Ol</a></p>
+  </div>
+</div>
+
+<!-- Kayıt Ol Pop-up -->
+<div id="registerPopup" class="popup">
+  <span class="popup-close" onclick="closeRegisterPopup()">&times;</span>
+  <div class="popup-content">
+    <h2 class="title">Kayıt Ol</h2>
+    <form id="registerForm" action="javascript:void(0)">
+      <input type="text" id="fullName" placeholder="Ad Soyad" required />
+      <input type="email" id="registerEmail" placeholder="E-Posta" required />
+      <input type="password" id="registerPassword" placeholder="Şifre" required />
+      <button type="submit" class="btn" onclick="registerUser(event)">Kayıt Ol</button>
+    </form>
+    <p>Zaten üye misiniz? <a href="javascript:void(0)" onclick="openLoginPopup()">Giriş Yap</a></p>
+  </div>
+</div>
+
+<!-- Kullanıcıyı selamlayan div -->
+<div id="welcomeMessage" style="display: none;">
+  Merhaba, <span id="userFullName"></span>!
+</div>
