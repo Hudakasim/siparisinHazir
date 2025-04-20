@@ -43,9 +43,47 @@
       <div class="col left">
         <div class="card" id="cart-area">
           <h2>Sepetim</h2>
-          <div id="cart-container"></div>
+          <div id="cart-container">
+            <div class="cart-item">
+              <img src="/menuSayfasi/yesen/menu/burgerler/Kasap-Burger-Maxi.jpg" alt="Ürün Adı">
+              <div class="item-details">
+                <h4>Kasap Burger Maxi</h4>
+                <p>₺300.00</p>
+                <div class="quantity-control">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+              </div>
+              <button class="remove-item">🗑</button>
+            </div>
+
+          </div>
           <h3>Yanında İyi Gider</h3>
-          <div id="recommendation-slider" class="recommendation-slider"></div>
+          <div id="recommendation-slider" class="recommendation-slider">
+            <div class="recommendation-item">
+              <img src="/menuSayfasi/yesen/menu/sos/Coloroda-Ranch-Sos.png" alt="Colarado Ranch Sos">
+              <button class="add-btn" onclick="addToCart('Ranch', 15, '/menuSayfasi/yesen/menu/sos/Coloroda-Ranch-Sos.png')">+</button>
+
+
+              <p>Coloroda Ranch Sos</p>
+              <span>₺10</span>
+            </div>
+
+            <div class="recommendation-item">
+              <img src="/menuSayfasi/yesen/menu/icecek/Cola.png" alt="Cola Turka">
+              <button class="add-btn" onclick="addToCart('Kola', 15, '/menuSayfasi/yesen/menu/icecek/Cola.png')">+</button>
+              <p>Cola Turka</p>
+              <span>₺30</span>
+            </div>
+
+            <div class="recommendation-item">
+              <img src="/menuSayfasi/yesen/menu/icecek/Ayran.png" alt="Ayran">
+              <button class="add-btn" onclick="addToCart('Ayran', 15, '/menuSayfasi/yesen/menu/icecek/Ayran.png')">+</button>
+              <p>Ayran</p>
+              <span>₺30</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -69,7 +107,7 @@
     <label>
       <input type="radio" name="payment" value="visa" checked />
       <div class="card-info">
-        <img src="/images/visa.png" alt="Visa" />
+        <img src="/anaSayfa/assets/visa.png" alt="Visa" />
         <div>
           <strong>Fatma kredi</strong>
           <p>4345 28•• •••• 36</p>
@@ -84,13 +122,13 @@
   <!-- Diğer seçenekler -->
   <div class="add-payment-buttons">
     <button type="button">+ Kredi/Banka Kartı</button>
-    <button type="button">+ BKM Express</button>
+
   </div>
 
   <!-- Güvence -->
   <div class="masterpass-info">
     <small>Kart bilgileri MasterPass güvencesiyle saklanmaktadır.</small><br />
-    <img src="/images/masterpass.png" alt="Masterpass" />
+    <img src="/anaSayfa/assets/masterpass.png" alt="Masterpass" />
   </div>
 
           <!-- Ödeme içeriğini buraya JS ile ekliyorsun zaten -->
@@ -101,7 +139,7 @@
       <div class="col right">
         <div class="card" id="order-summary">
           <h3>Sipariş Notu</h3>
-          <textarea id="orderNote" placeholder="Zili çalma, ekstra ketçap vb."></textarea>
+          <textarea id="orderNote" placeholder="Ekstra ketçap,mayonez,soğansız vb."></textarea>
 
           <div class="grand-total">
             Sepet Toplamı: ₺<span id="grand-total">0.00</span>
