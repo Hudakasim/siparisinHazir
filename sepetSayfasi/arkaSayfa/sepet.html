@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="/loginSayfasi/login.html" />
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
   <!-- Navbar -->
@@ -36,36 +35,88 @@
   </header>
 
   <div id="popupContainer"></div>
+  <div class="page-wrapper">
 
-  <!-- Sayfa İçeriği -->
-  <div class="main-wrapper">
-    <div class="cart-area">
-      <h2>Sepetim</h2>
-      <div id="cart-container"></div>
-      <div class="summary-bar">Toplam: ₺<span id="grand-total">0.00</span></div>
+    <!-- 🔹 1. SATIR -->
+    <div class="row">
+      <!-- Sol: Sepet -->
+      <div class="col left">
+        <div class="card" id="cart-area">
+          <h2>Sepetim</h2>
+          <div id="cart-container"></div>
+          <h3>Yanında İyi Gider</h3>
+          <div id="recommendation-slider" class="recommendation-slider"></div>
+        </div>
+      </div>
 
-      <div class="recommendation-section">
-        <h3>Yanında İyi Gider</h3>
-        <div class="recommendation-slider" id="recommendation-slider"></div>
+      <!-- Sağ: Teslimat Saati -->
+      <div class="col right">
+        <div class="card" id="delivery-time">
+          <h3>Teslimat Saatini Seçin</h3>
+          <input type="time" id="deliveryTimeInput" min="08:30" max="16:30" />
+        </div>
       </div>
     </div>
 
-    <div class="delivery-options">
-      <h3>Ödeme ve Teslimat</h3>
-      <label><input type="radio" name="deliveryTime" value="12"> 12:00'da Al</label>
-      <label><input type="radio" name="deliveryTime" value="13"> 13:00'da Al</label>
-      <label>
-        <input type="radio" name="deliveryTime" value="other">
-        Başka Saat <input type="time" id="otherTimeInput" style="display: none;">
-      </label>
-
-      <h4>Ödeme Yöntemi</h4>
-      <label><input type="radio" name="payment" value="card"> Kredi Kartı</label>
-      <label><input type="radio" name="payment" value="cash"> Nakit</label>
-
-      <button onclick="checkout()">Ödemeye Geç</button>
-    </div>
+    <!-- 🔹 2. SATIR -->
+    <div class="row">
+      <!-- Sol: Ödeme Yöntemi -->
+      <div class="col left">
+        <div class="card" id="payment-method">
+          <h3>Ödeme Yöntemi</h3>
+          <!-- Ödeme Yöntemi Kart Seçimi -->
+<div class="payment-option">
+    <label>
+      <input type="radio" name="payment" value="visa" checked />
+      <div class="card-info">
+        <img src="/images/visa.png" alt="Visa" />
+        <div>
+          <strong>Fatma kredi</strong>
+          <p>4345 28•• •••• 36</p>
+        </div>
+        <button type="button" class="edit-btn">Değiştir</button>
+      </div>
+    </label>
   </div>
+
+  <p class="payment-desc">Sipariş verdiğinizde seçili karttan ödeme alınacaktır.</p>
+
+  <!-- Diğer seçenekler -->
+  <div class="add-payment-buttons">
+    <button type="button">+ Kredi/Banka Kartı</button>
+    <button type="button">+ BKM Express</button>
+  </div>
+
+  <!-- Güvence -->
+  <div class="masterpass-info">
+    <small>Kart bilgileri MasterPass güvencesiyle saklanmaktadır.</small><br />
+    <img src="/images/masterpass.png" alt="Masterpass" />
+  </div>
+
+          <!-- Ödeme içeriğini buraya JS ile ekliyorsun zaten -->
+        </div>
+      </div>
+
+      <!-- Sağ: Sipariş Özeti -->
+      <div class="col right">
+        <div class="card" id="order-summary">
+          <h3>Sipariş Notu</h3>
+          <textarea id="orderNote" placeholder="Zili çalma, ekstra ketçap vb."></textarea>
+
+          <div class="grand-total">
+            Sepet Toplamı: ₺<span id="grand-total">0.00</span>
+          </div>
+
+          <button class="order-btn" onclick="submitOrder()">Siparişi Ver</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
 
   <script src="/sepetSayfasi/arkaSayfa/arkaSayfa.js"></script>
   <script src="/anaSayfa/script.js"></script>
