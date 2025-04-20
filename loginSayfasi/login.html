@@ -1,39 +1,89 @@
-<!-- Ortak Login & Register Popup -->
-<!-- Bu dosya diğer sayfalar tarafından fetch ile çağrılacak -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Giriş Yap / Üye Ol</title>
 
-<!-- Pop-up Overlay -->
-<div id="popupOverlay" class="popup-overlay"></div>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="/anaSayfa/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-<!-- Giriş Yap Pop-up -->
-<div id="loginPopup" class="popup">
-  <span class="popup-close" onclick="closeLoginPopup()">&times;</span>
-  <div class="popup-content">
-    <h2 class="title">Giriş Yap</h2>
-    <form id="loginForm" action="javascript:void(0)">
-      <input type="email" id="email" placeholder="E-Posta" required />
-      <input type="password" id="password" placeholder="Şifre" required />
-      <button type="submit" class="btn" onclick="loginUser(event)">Giriş Yap</button>
-    </form>
-    <p>Henüz üye değil misiniz? <a href="javascript:void(0)" onclick="openRegisterPopup()">Kayıt Ol</a></p>
+</head>
+<body>
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">
+    <a href="../../anaSayfa/index.html">
+      <img src="/anaSayfa/assets/logo.png" alt="SiparişinHazır" />
+    </a>
+  </div>
+
+  <div class="nav-links">
+    <a href="/anaSayfa/index.html">Ana Sayfa</a>
+  </div>
+
+  <div class="nav-icons">
+    <a href="/loginSayfasi/login.html" title="Giriş">
+      <i class="fas fa-user"></i>
+    </a>
+
+    <a href="/sepetSayfasi/arkaSayfa/sepet.html" title="Sepet">
+      <i class="fas fa-shopping-cart"></i>
+    </a>
+  </div>
+</header>
+<div class="page">
+  <div class="auth-container">
+    <h2>Merhaba,</h2>
+    <p>Giriş yap veya hesap oluştur, indirimleri kaçırma!</p>
+
+
+    <div class="tabs">
+      <button class="tab active" onclick="showTab('login')">Giriş Yap</button>
+      <button class="tab" onclick="showTab('register')">Üye Ol</button>
+    </div>
+
+    <!-- GİRİŞ FORMU -->
+    <div id="loginForm" class="form-section active">
+      <form onsubmit="return loginUser(event)">
+        <label for="loginEmail">E-Posta</label>
+        <input type="email" id="loginEmail" required>
+
+        <label for="loginPassword">Şifre</label>
+        <input type="password" id="loginPassword" required>
+
+        <a href="#">Şifremi Unuttum</a>
+        <button type="submit" class="btn-primary">GİRİŞ YAP</button>
+
+        <div class="social-login">
+          <button class="facebook-btn">Facebook ile Giriş</button>
+          <button class="google-btn">Google ile Giriş</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- ÜYE OL FORMU -->
+    <div id="registerForm" class="form-section">
+      <form onsubmit="return registerUser(event)">
+        <label for="registerName">Ad Soyad</label>
+        <input type="text" id="registerName" required>
+
+        <label for="registerEmail">E-Posta</label>
+        <input type="email" id="registerEmail" required>
+
+        <label for="registerPassword">Şifre</label>
+        <input type="password" id="registerPassword" required>
+
+        <button type="submit" class="btn-primary">ÜYE OL</button>
+      </form>
+    </div>
   </div>
 </div>
 
-<!-- Kayıt Ol Pop-up -->
-<div id="registerPopup" class="popup">
-  <span class="popup-close" onclick="closeRegisterPopup()">&times;</span>
-  <div class="popup-content">
-    <h2 class="title">Kayıt Ol</h2>
-    <form id="registerForm" action="javascript:void(0)">
-      <input type="text" id="fullName" placeholder="Ad Soyad" required />
-      <input type="email" id="registerEmail" placeholder="E-Posta" required />
-      <input type="password" id="registerPassword" placeholder="Şifre" required />
-      <button type="submit" class="btn" onclick="registerUser(event)">Kayıt Ol</button>
-    </form>
-    <p>Zaten üye misiniz? <a href="javascript:void(0)" onclick="openLoginPopup()">Giriş Yap</a></p>
-  </div>
-</div>
 
-<!-- Kullanıcıyı selamlayan div -->
-<div id="welcomeMessage" style="display: none;">
-  Merhaba, <span id="userFullName"></span>!
-</div>
+  <script src="login.js"></script>
+  <script src="/anaSayfa/script.js"></script>
+</body>
+</html>
