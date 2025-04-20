@@ -10,11 +10,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Jost', sans-serif;
-  background-image: url('assets/back.png');
+  background-image: url('assets/anapage.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /*min-height: 100vh;*/
+  min-height: 150vh;
 }
 html {
   scroll-behavior: smooth;

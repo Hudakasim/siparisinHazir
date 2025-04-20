@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sepetim | SiparişinHazır</title>
+  <link rel="icon" href="/anaSayfa/assets/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="/anaSayfa/style.css" />
+  <link rel="stylesheet" href="/sepetSayfasi/arkaSayfa/arkaSayfa.css" />
+  <link rel="stylesheet" href="/loginSayfasi/login.html" />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="../../anaSayfa/index.html">
+        <img src="/anaSayfa/assets/logo.png" alt="SiparişinHazır" />
+      </a>
+    </div>
+
+    <div class="nav-links">
+      <a href="/anaSayfa/index.html">Ana Sayfa</a>
+    </div>
+
+    <div class="nav-icons">
+      <a href="javascript:void(0)" onclick="parent.openLoginPopup()" title="Giriş">
+        <i class="fas fa-user"></i>
+      </a>
+      <a href="/sepetSayfasi/arkaSayfa/sepet.html" title="Sepet">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+    </div>
+  </header>
+
+  <div id="popupContainer"></div>
+
+  <!-- Sayfa İçeriği -->
+  <div class="main-wrapper">
+    <div class="cart-area">
+      <h2>Sepetim</h2>
+      <div id="cart-container"></div>
+      <div class="summary-bar">Toplam: ₺<span id="grand-total">0.00</span></div>
+
+      <div class="recommendation-section">
+        <h3>Yanında İyi Gider</h3>
+        <div class="recommendation-slider" id="recommendation-slider"></div>
+      </div>
+    </div>
+
+    <div class="delivery-options">
+      <h3>Ödeme ve Teslimat</h3>
+      <label><input type="radio" name="deliveryTime" value="12"> 12:00'da Al</label>
+      <label><input type="radio" name="deliveryTime" value="13"> 13:00'da Al</label>
+      <label>
+        <input type="radio" name="deliveryTime" value="other">
+        Başka Saat <input type="time" id="otherTimeInput" style="display: none;">
+      </label>
+
+      <h4>Ödeme Yöntemi</h4>
+      <label><input type="radio" name="payment" value="card"> Kredi Kartı</label>
+      <label><input type="radio" name="payment" value="cash"> Nakit</label>
+
+      <button onclick="checkout()">Ödemeye Geç</button>
+    </div>
+  </div>
+
+  <script src="/sepetSayfasi/arkaSayfa/arkaSayfa.js"></script>
+  <script src="/anaSayfa/script.js"></script>
+</body>
+</html>
