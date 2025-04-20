@@ -24,7 +24,8 @@ public class MenuItem {
 
     private String imageUrl;
 
-    private String category; // örneğin: "Kahve", "Tatlı", "Burger"
+    // örneğin: "Kahve", "Tatlı", "Burger"
+    private String category;
 
     // Her ürün bir kafeye aittir
     @ManyToOne
