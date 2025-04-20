@@ -1,8 +1,88 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fefefe;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Jost', sans-serif;
+
+  }
+
+  body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Jost', sans-serif;
+	background-image: url('../../anaSayfa/assets/anapage.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 150vh;
+  }
+  html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 100px;
+	overflow-y: scroll;
+  }
+  .navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: white;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+  }
+
+  .logo img {
+	height: 50px;
+   object-fit: contain;
+	display: block;
+  }
+
+  .logo {
+	display: flex;
+	align-items: center;
+  }
+  .nav-links {
+	display: flex;
+	margin-left: auto;
+	margin-right: 20px;
+	font-family: 'Jost', sans-serif;
+  }
+
+  .nav-links a {
+	margin-right: 20px;
+	text-decoration: none;
+	color: #333;
+	font-weight: 700;
+	transition: color 0.3s;
+	font-size: 20px;
+  }
+
+  .nav-links a.active,
+  .nav-links a:hover {
+	color: #e86f18;
+	/* transform: scale(1.1); */
+  }
+
+  .nav-icons {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	margin-right: 20px;
+	margin-left: 10p;
+  }
+
+  .nav-icons a {
+	font-size: 25px;
+	color: #444;
+	cursor: pointer;
+	transition: color 0.3s;
+  }
+
+  .nav-icons a:hover {
+	color: #e86f18;
+	transform: scale(1.1);
   }
 
   .page {
