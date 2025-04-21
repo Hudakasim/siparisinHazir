@@ -1,5 +1,8 @@
 package com.siparisinhazir.demo.service;
 
-public interface UserService {
+import com.siparisinhazir.demo.dto.RegisterRequest;
+import com.siparisinhazir.demo.dto.UserResponse;
 
+public interface UserService {
+    UserResponse registerUser(RegisterRequest request);
 }
