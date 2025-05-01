@@ -5,36 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63de03fb-14c1-4d6a-8d35-d04a2dc93e89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/siparisinHazir.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/dto/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/dto/RegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/dto/UserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loginSayfasi/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loginSayfasi/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anaSayfa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/anaSayfa/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anaSayfa/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/anaSayfa/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anaSayfa/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/anaSayfa/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/MenuItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/Vendor.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/Vendor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loginSayfasi/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/loginSayfasi/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menuSayfasi/aker/aker.html" beforeDir="false" afterPath="$PROJECT_DIR$/menuSayfasi/aker/aker.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menuSayfasi/coffee/coffee.html" beforeDir="false" afterPath="$PROJECT_DIR$/menuSayfasi/coffee/coffee.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menuSayfasi/yesen/yesen.html" beforeDir="false" afterPath="$PROJECT_DIR$/menuSayfasi/yesen/yesen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sepetSayfasi/arkaSayfa/sepet.html" beforeDir="false" afterPath="$PROJECT_DIR$/sepetSayfasi/arkaSayfa/sepet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/SiparisinHazirApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/SiparisinHazirApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,32 +44,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Notification.DisplayName-DoNotAsk-Compiler": "Build finished",
-    "Notification.DoNotAsk-Compiler": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.SiparisinHazirApplication.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "Merging main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Notification.DisplayName-DoNotAsk-Compiler&quot;: &quot;Build finished&quot;,
+    &quot;Notification.DoNotAsk-Compiler&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.SiparisinHazirApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -133,7 +107,9 @@
       <workItem from="1745148807315" duration="4341000" />
       <workItem from="1745160011083" duration="298000" />
       <workItem from="1745160324957" duration="645000" />
-      <workItem from="1745161454517" duration="5444000" />
+      <workItem from="1745161454517" duration="7612000" />
+      <workItem from="1745225526252" duration="1082000" />
+      <workItem from="1746095925512" duration="4046000" />
     </task>
     <servers />
   </component>
