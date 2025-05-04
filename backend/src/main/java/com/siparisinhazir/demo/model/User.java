@@ -1,10 +1,10 @@
 package com.siparisinhazir.demo.model;
-import lombok.Builder;
+
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
 
 @Entity
 @Table(name = "users")
@@ -33,4 +33,7 @@ public class User {
     // Kullanıcı rolü: "USER", "ADMIN" gibi
     @Column(nullable = false)
     private String role;
+
+    public void setUsername(String ignoredUsername) {
+    }
 }
