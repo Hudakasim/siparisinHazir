@@ -13,7 +13,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class VendorServiceImpl implements VendorService {
 
-    private final VendorRepository vendorRepository;
+    private final ThreadLocal<VendorRepository> vendorRepository = new ThreadLocal<VendorRepository>();
 
     @Override
     public VendorResponse createVendor(VendorRequest request) {

@@ -14,22 +14,22 @@ import java.util.List;
 @RequiredArgsConstructor
 public class VendorController {
 
-    private final VendorService vendorService;
+    private final ThreadLocal<VendorService> vendorService = new ThreadLocal<VendorService>();
 
     @PostMapping
     @PreAuthorize("hasRole('ADMIN')")
     public VendorResponse createVendor(@RequestBody VendorRequest request) {
-        return vendorService.createVendor(request);
+        return vendorService.get().createVendor(request);
     }
 
     @DeleteMapping("/{id}")
     @PreAuthorize("hasRole('ADMIN')")
     public void deleteVendor(@PathVariable Long id) {
-        vendorService.deleteVendor(id);
+        vendorService.get().deleteVendor(id);
     }
 
     @GetMapping
     public List<VendorResponse> getAllVendors() {
-        return vendorService.getAllVendors();
+        return vendorService.get().getAllVendors();
     }
 }

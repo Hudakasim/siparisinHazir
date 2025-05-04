@@ -14,20 +14,17 @@ import java.util.List;
 @RequiredArgsConstructor
 public class OrderController {
 
-    /**
-     *
-     */
-    private final OrderService orderService;
+    private final ThreadLocal<OrderService> orderService = new ThreadLocal<OrderService>();
 
     @PostMapping
     @PreAuthorize("hasRole('USER')")
     public OrderResponse createOrder(@RequestBody OrderRequest request) {
-        return orderService.createOrder(request);
+        return orderService.get().createOrder(request);
     }
 
     @GetMapping("/{userId}")
     @PreAuthorize("hasRole('USER')")
     public List<OrderResponse> getUserOrders(@PathVariable Long userId) {
-        return orderService.getUserOrders(userId);
+        return orderService.get().getUserOrders(userId);
     }
 }

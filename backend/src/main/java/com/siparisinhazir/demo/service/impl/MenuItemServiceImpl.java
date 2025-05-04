@@ -14,8 +14,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class MenuItemServiceImpl implements MenuItemService {
 
-    private final MenuItemRepository menuItemRepository;
-    private final VendorRepository vendorRepository;
+    private final ThreadLocal<MenuItemRepository> menuItemRepository = new ThreadLocal<MenuItemRepository>();
+    private final ThreadLocal<VendorRepository> vendorRepository = new ThreadLocal<VendorRepository>();
 
     @Override
     public MenuItemResponse createMenuItem(MenuItemRequest request) {

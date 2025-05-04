@@ -14,9 +14,9 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class OrderServiceImpl implements OrderService {
-    private final OrderRepository orderRepository;
-    private final OrderItemRepository orderItemRepository;
-    private final MenuItemRepository menuItemRepository;
+    private final ThreadLocal<OrderRepository> orderRepository = new ThreadLocal<OrderRepository>();
+    private final ThreadLocal<OrderItemRepository> orderItemRepository = new ThreadLocal<OrderItemRepository>();
+    private final ThreadLocal<MenuItemRepository> menuItemRepository = new ThreadLocal<MenuItemRepository>();
 
     @Override
     public OrderResponse createOrder(OrderRequest request) {
