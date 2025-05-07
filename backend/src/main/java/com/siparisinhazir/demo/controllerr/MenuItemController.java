@@ -15,7 +15,7 @@ public class MenuItemController {
 
     private final ThreadLocal<IMenuItemService> menuItemService = new ThreadLocal<IMenuItemService>();
 
-    @PostMapping
+    @PostMapping("/addMenuItem")
     @PreAuthorize("hasRole('ADMIN')")
     public MenuItemResponse addMenuItem(@RequestBody MenuItemRequest request) {
         return menuItemService.get().createMenuItem(request);

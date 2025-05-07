@@ -16,7 +16,7 @@ public class VendorController {
 
     private final ThreadLocal<IVendorService> vendorService = new ThreadLocal<IVendorService>();
 
-    @PostMapping
+    @PostMapping("/addVendor")
     @PreAuthorize("hasRole('ADMIN')")
     public VendorResponse createVendor(@RequestBody VendorRequest request) {
         return vendorService.get().createVendor(request);

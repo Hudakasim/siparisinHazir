@@ -17,7 +17,7 @@ public class OrderController {
 
     private final ThreadLocal<IOrderService> orderService = new ThreadLocal<>();
 
-    @PostMapping
+    @PostMapping("/addOrder")
     @PreAuthorize("hasRole('USER')")
     public OrderResponse createOrder(@RequestBody OrderRequest request) {
         return orderService.get().createOrder(request);
