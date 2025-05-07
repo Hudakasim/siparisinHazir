@@ -12,7 +12,7 @@ public class UserMapper {
         dto.setId(user.getId());
         dto.setFullName(user.getFullName());
         dto.setEmail(user.getEmail());
-        dto.setRole(user.getRole().name()); // enum ise
+        dto.setRole(user.getRole()); // enum ise
         return dto;
     }
 

@@ -19,6 +19,7 @@ public class OrderItem {
     private boolean deleted=false;
 
     private Integer quantity;
+    private Double price;
 
     @ManyToOne
     @JoinColumn(name = "order_id")

@@ -5,22 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63de03fb-14c1-4d6a-8d35-d04a2dc93e89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/mapper/OrderItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/mapper/VendorMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/dto/OrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/dto/OrderRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/mapper/MenuItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/mapper/MenuItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/MenuItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/OrderItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/Vendor.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/model/Vendor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/repository/IOrderItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/repository/IOrderItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/impl/VendorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/impl/VendorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/impl/MenuItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/impl/MenuItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/impl/OrderServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,6 +150,8 @@
       <workItem from="1746621019179" duration="2017000" />
       <workItem from="1746648887157" duration="1624000" />
       <workItem from="1746650540612" duration="553000" />
+      <workItem from="1746651108084" duration="524000" />
+      <workItem from="1746651643791" duration="3971000" />
     </task>
     <servers />
   </component>

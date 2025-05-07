@@ -17,10 +17,13 @@ public class MenuItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private boolean deleted=false;
     @Column(nullable = false)
     private String name;
-
+    private String title;
+    private String detail;
+    private Double cost;
     private String description;
 
     @Column(nullable = false)

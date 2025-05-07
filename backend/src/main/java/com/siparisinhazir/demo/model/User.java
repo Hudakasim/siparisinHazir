@@ -19,10 +19,13 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private boolean deleted=false;
+    private String name;
+    private String username;
 
     // Tam adı (full name) — görünen ad
     @Column(nullable = false)
     private String fullName;
+
 
     // Email hem giriş için kullanılır hem de unique olmalı
     @Column(nullable = false, unique = true)
