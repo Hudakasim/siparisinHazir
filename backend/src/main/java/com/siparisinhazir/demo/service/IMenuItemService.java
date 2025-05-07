@@ -5,7 +5,7 @@ import com.siparisinhazir.demo.dto.MenuItemResponse;
 
 import java.util.List;
 
-public interface MenuItemService {
+public interface IMenuItemService {
 
     MenuItemResponse createMenuItem(MenuItemRequest request);
 

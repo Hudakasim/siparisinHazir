@@ -2,9 +2,9 @@ package com.siparisinhazir.demo.service.impl;
 
 import com.siparisinhazir.demo.dto.MenuItemRequest;
 import com.siparisinhazir.demo.dto.MenuItemResponse;
-import com.siparisinhazir.demo.repository.MenuItemRepository;
-import com.siparisinhazir.demo.repository.VendorRepository;
-import com.siparisinhazir.demo.service.MenuItemService;
+import com.siparisinhazir.demo.repository.IMenuItemRepository;
+import com.siparisinhazir.demo.repository.IVendorRepository;
+import com.siparisinhazir.demo.service.IMenuItemService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,10 +12,10 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class MenuItemServiceImpl implements MenuItemService {
+public class MenuItemServiceImpl implements IMenuItemService {
 
-    private final ThreadLocal<MenuItemRepository> menuItemRepository = new ThreadLocal<MenuItemRepository>();
-    private final ThreadLocal<VendorRepository> vendorRepository = new ThreadLocal<VendorRepository>();
+    private final ThreadLocal<IMenuItemRepository> menuItemRepository = new ThreadLocal<IMenuItemRepository>();
+    private final ThreadLocal<IVendorRepository> vendorRepository = new ThreadLocal<IVendorRepository>();
 
     @Override
     public MenuItemResponse createMenuItem(MenuItemRequest request) {

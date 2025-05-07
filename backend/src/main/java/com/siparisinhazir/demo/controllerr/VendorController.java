@@ -1,8 +1,8 @@
-package com.siparisinhazir.demo.controller;
+package com.siparisinhazir.demo.controllerr;
 
 import com.siparisinhazir.demo.dto.VendorRequest;
 import com.siparisinhazir.demo.dto.VendorResponse;
-import com.siparisinhazir.demo.service.VendorService;
+import com.siparisinhazir.demo.service.IVendorService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class VendorController {
 
-    private final ThreadLocal<VendorService> vendorService = new ThreadLocal<VendorService>();
+    private final ThreadLocal<IVendorService> vendorService = new ThreadLocal<IVendorService>();
 
     @PostMapping
     @PreAuthorize("hasRole('ADMIN')")

@@ -2,8 +2,8 @@ package com.siparisinhazir.demo.service.impl;
 
 import com.siparisinhazir.demo.dto.VendorRequest;
 import com.siparisinhazir.demo.dto.VendorResponse;
-import com.siparisinhazir.demo.repository.VendorRepository;
-import com.siparisinhazir.demo.service.VendorService;
+import com.siparisinhazir.demo.repository.IVendorRepository;
+import com.siparisinhazir.demo.service.IVendorService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -11,9 +11,9 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class VendorServiceImpl implements VendorService {
+public class VendorServiceImpl implements IVendorService {
 
-    private final ThreadLocal<VendorRepository> vendorRepository = new ThreadLocal<VendorRepository>();
+    private final ThreadLocal<IVendorRepository> vendorRepository = new ThreadLocal<IVendorRepository>();
 
     @Override
     public VendorResponse createVendor(VendorRequest request) {

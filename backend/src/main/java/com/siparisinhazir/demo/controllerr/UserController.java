@@ -1,9 +1,9 @@
-package com.siparisinhazir.demo.controller;
+package com.siparisinhazir.demo.controllerr;
 
 import com.siparisinhazir.demo.dto.LoginRequest;
 import com.siparisinhazir.demo.dto.RegisterRequest;
 import com.siparisinhazir.demo.dto.UserResponse;
-import com.siparisinhazir.demo.service.UserService;
+import com.siparisinhazir.demo.service.IUserService;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class UserController {
 
-    private final ThreadLocal<UserService> userService = new ThreadLocal<>();
+    private final ThreadLocal<IUserService> userService = new ThreadLocal<>();
     @Setter
     @Getter
     private LoginRequest loginRequest;
@@ -33,7 +33,7 @@ public class UserController {
         return ResponseEntity.ok("Giriş başarılı (dummy)");
     }
 
-    public UserService getUserService() {
+    public IUserService getUserService() {
         return userService.get();
     }
 }

@@ -5,7 +5,7 @@ import com.siparisinhazir.demo.dto.OrderResponse;
 
 import java.util.List;
 
-public interface OrderService {
+public interface IOrderService {
 
     OrderResponse createOrder(OrderRequest request);
 

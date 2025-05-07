@@ -5,7 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63de03fb-14c1-4d6a-8d35-d04a2dc93e89" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/controllerr/MenuItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/SiparisinHazirApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/SiparisinHazirApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/controller/MenuItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/controller/MenuItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/controller/VendorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/controller/VendorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/repository/MenuItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/repository/IMenuItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/repository/OrderItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/repository/IOrderItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/repository/IOrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/repository/VendorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/repository/IVendorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/MenuItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/IMenuItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/IOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/VendorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/IVendorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/impl/MenuItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/impl/MenuItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/impl/VendorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/siparisinhazir/demo/service/impl/VendorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/siparisinhazir/demo/SiparisinHazirApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/siparisinhazir/demo/SiparisinHazirApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +66,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.demo [-Dtest=NOT_RESOLVED,test-compile...].executor": "Run",
+    "Maven.demo [clean,-DforkCount=0...].executor": "Debug",
     "Maven.demo [clean,install].executor": "Run",
+    "Maven.demo [clean].executor": "Run",
     "Notification.DisplayName-DoNotAsk-Compiler": "Build finished",
     "Notification.DoNotAsk-Compiler": "true",
     "RequestMappingsPanelOrder0": "0",
@@ -57,7 +81,9 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/Beyza/IdeaProjects/siparisinHazir/backend/src/test/java/com/siparisinhazir/demo/service",
     "last_opened_file_path": "C:/xampp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -65,21 +91,28 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
+    "project.structure.proportion": "0.24255319",
+    "project.structure.side.proportion": "0.4314721",
     "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.siparisinhazir.demo.controller" />
       <recent name="com.siparisinhazir.demo.service.impl" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Beyza\IdeaProjects\siparisinHazir\src\main\java\com\siparisinhazir\demo\controller " />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.siparisinhazir.demo.service.impl" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.siparisinhazir.demo.service" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.siparisinhazir.demo.service.impl" />
@@ -123,6 +156,9 @@
       <workItem from="1745225526252" duration="1082000" />
       <workItem from="1746095925512" duration="7289000" />
       <workItem from="1746177798107" duration="23433000" />
+      <workItem from="1746367528281" duration="4534000" />
+      <workItem from="1746617351592" duration="3481000" />
+      <workItem from="1746621019179" duration="2017000" />
     </task>
     <servers />
   </component>

@@ -5,7 +5,7 @@ import com.siparisinhazir.demo.dto.VendorResponse;
 
 import java.util.List;
 
-public interface VendorService {
+public interface IVendorService {
 
     VendorResponse createVendor(VendorRequest request);
 
