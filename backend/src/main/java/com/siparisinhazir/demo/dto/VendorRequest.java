@@ -5,6 +5,7 @@ import lombok.Data;
 @Data
 public class VendorRequest {
     private String name;
+    private Long id;
 }
 
 

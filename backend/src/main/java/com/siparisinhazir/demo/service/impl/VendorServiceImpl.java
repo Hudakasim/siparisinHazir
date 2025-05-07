@@ -2,35 +2,41 @@ package com.siparisinhazir.demo.service.impl;
 
 import com.siparisinhazir.demo.dto.VendorRequest;
 import com.siparisinhazir.demo.dto.VendorResponse;
+import com.siparisinhazir.demo.mapper.VendorMapper;
+import com.siparisinhazir.demo.model.Vendor;
 import com.siparisinhazir.demo.repository.IVendorRepository;
 import com.siparisinhazir.demo.service.IVendorService;
-import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
-@RequiredArgsConstructor
 public class VendorServiceImpl implements IVendorService {
 
-    private final ThreadLocal<IVendorRepository> vendorRepository = new ThreadLocal<IVendorRepository>();
+    @Autowired
+    private IVendorRepository vendorRepository;
 
     @Override
     public VendorResponse createVendor(VendorRequest request) {
-
-        return null;
+        Vendor vendor = VendorMapper.dtoToVendor(request);
+        Vendor saved = vendorRepository.save(vendor);
+        return VendorMapper.vendorToDto(saved);
     }
 
     @Override
     public void deleteVendor(Long id) {
-
+        Optional<Vendor> vendor = vendorRepository.findById(id);
+        vendor.ifPresent(vendorRepository::delete);
     }
 
     @Override
     public List<VendorResponse> getAllVendors() {
-
-        return List.of();
+        List<Vendor> vendors = vendorRepository.findAll();
+        return vendors.stream()
+                .map(VendorMapper::vendorToDto)
+                .collect(Collectors.toList());
     }
-
-    // metodlar burada (önceden yazmıştık zaten)
 }
