@@ -2,7 +2,6 @@ package com.siparisinhazir.demo.service.impl;
 
 import com.siparisinhazir.demo.dto.OrderRequest;
 import com.siparisinhazir.demo.dto.OrderResponse;
-import com.siparisinhazir.demo.dto.OrderItemRequest;
 import com.siparisinhazir.demo.mapper.OrderItemMapper;
 import com.siparisinhazir.demo.mapper.OrderMapper;
 import com.siparisinhazir.demo.model.*;
@@ -11,27 +10,28 @@ import com.siparisinhazir.demo.repository.IOrderRepository;
 import com.siparisinhazir.demo.repository.IMenuItemRepository;
 import com.siparisinhazir.demo.repository.UserRepository;
 import com.siparisinhazir.demo.service.IOrderService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
 public class OrderServiceImpl implements IOrderService {
 
-    @Autowired
-    private IOrderRepository orderRepository;
+    private final IOrderRepository orderRepository;
 
-    @Autowired
-    private IOrderItemRepository orderItemRepository;
+    private final IOrderItemRepository orderItemRepository;
 
-    @Autowired
-    private IMenuItemRepository menuItemRepository;
+    private final IMenuItemRepository menuItemRepository;
 
-    @Autowired
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
+
+    public OrderServiceImpl(IOrderRepository orderRepository, IOrderItemRepository orderItemRepository, IMenuItemRepository menuItemRepository, UserRepository userRepository) {
+        this.orderRepository = orderRepository;
+        this.orderItemRepository = orderItemRepository;
+        this.menuItemRepository = menuItemRepository;
+        this.userRepository = userRepository;
+    }
 
     @Override
     public OrderResponse createOrder(OrderRequest request) {

@@ -1,22 +1,20 @@
-package com.siparisinhazir.demo.model;
+    package com.siparisinhazir.demo.model;
 
-import jakarta.persistence.*;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.Where;
+    import jakarta.persistence.*;
+    import lombok.Data;
+    import lombok.Getter;
+    import lombok.Setter;
+    import org.hibernate.annotations.Where;
+    @Entity
+    @Data
+    @Where(clause = "deleted=false")
+    public class Vendor {
 
-@Entity
-@Data
-@Getter
-@Setter
-@Where(clause="deleted=false")
-public class Vendor {
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        private Long id;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private boolean deleted=false;
+        private boolean deleted = false;
 
-    private String name;
-}
+        private String name;
+    }

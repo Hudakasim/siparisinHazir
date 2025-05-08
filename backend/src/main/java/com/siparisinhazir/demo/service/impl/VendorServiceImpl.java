@@ -16,8 +16,11 @@ import java.util.stream.Collectors;
 @Service
 public class VendorServiceImpl implements IVendorService {
 
-    @Autowired
-    private IVendorRepository vendorRepository;
+    private final IVendorRepository vendorRepository;
+
+    public VendorServiceImpl(IVendorRepository vendorRepository) {
+        this.vendorRepository = vendorRepository;
+    }
 
     @Override
     public VendorResponse createVendor(VendorRequest request) {

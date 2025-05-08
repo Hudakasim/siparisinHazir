@@ -11,5 +11,4 @@ public class SiparisinHazirApplication {
 
 		SpringApplication.run(SiparisinHazirApplication.class, args);
 	}
-
 }

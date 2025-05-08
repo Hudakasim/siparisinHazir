@@ -8,7 +8,6 @@ import com.siparisinhazir.demo.model.Vendor;
 import com.siparisinhazir.demo.repository.IMenuItemRepository;
 import com.siparisinhazir.demo.repository.IVendorRepository;
 import com.siparisinhazir.demo.service.IMenuItemService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,11 +17,14 @@ import java.util.stream.Collectors;
 @Service
 public class MenuItemServiceImpl implements IMenuItemService {
 
-    @Autowired
-    private IMenuItemRepository menuItemRepository;
+    private final IMenuItemRepository menuItemRepository;
 
-    @Autowired
-    private IVendorRepository vendorRepository;
+    private final IVendorRepository vendorRepository;
+
+    public MenuItemServiceImpl(IMenuItemRepository menuItemRepository, IVendorRepository vendorRepository) {
+        this.menuItemRepository = menuItemRepository;
+        this.vendorRepository = vendorRepository;
+    }
 
     @Override
     public MenuItemResponse createMenuItem(MenuItemRequest request) {
@@ -46,10 +48,7 @@ public class MenuItemServiceImpl implements IMenuItemService {
         MenuItem menuItem = optional.get();
         MenuItemMapper.updateMenuItemFromDto(request, menuItem);
 
-        Vendor vendor = vendorRepository.findById(request.getVendorId()).orElse(null);
-        if (vendor != null) {
-            menuItem.setVendor(vendor);
-        }
+        vendorRepository.findById(request.getVendorId()).ifPresent(vendor -> menuItem.setVendor(vendor));
 
         MenuItem updated = menuItemRepository.save(menuItem);
         return MenuItemMapper.menuItemToDto(updated);

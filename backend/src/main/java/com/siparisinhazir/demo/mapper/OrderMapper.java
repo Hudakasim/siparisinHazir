@@ -34,7 +34,6 @@ public class OrderMapper {
                             .collect(Collectors.toList())
             );
         }
-
         return dto;
     }
 
@@ -45,3 +44,13 @@ public class OrderMapper {
         // Statü dışarıdan DTO ile değiştirilmiyor, backend'de iş kurallarına göre güncellenir
     }
 }
+
+
+
+
+
+
+
+
+
+
